@@ -111,12 +111,12 @@ public class Klawiatura extends JPanel {
                 }
             }
 
-            Calculator.wynik.setText(Calculator.wartoscWyniku);
-            Calculator.pamiec.setText("Pamiec:" + Calculator.wartoscPamieci);
+            PanelWynikowy.wynik.setText(Calculator.wartoscWyniku);
+            PanelWynikowy.pamiec.setText("Pamiec:" + Calculator.wartoscPamieci);
 
-            if (Calculator.wartoscPamieci.equals("0")) Calculator.pamiec.setVisible(false);
-            else if (!Calculator.pamiec.isVisible()) {
-                Calculator.pamiec.setVisible(true);
+            if (Calculator.wartoscPamieci.equals("0")) PanelWynikowy.pamiec.setVisible(false);
+            else if (!PanelWynikowy.pamiec.isVisible()) {
+                PanelWynikowy.pamiec.setVisible(true);
             }
         }
     }
